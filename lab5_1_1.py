@@ -12,7 +12,7 @@ def blink(pin):
 
 try:
     while True:
-        blink(18)
+        blink(24)
 except KeyboardInterrupt:
 
     GPIO.cleanup()
