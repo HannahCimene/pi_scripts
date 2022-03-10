@@ -10,8 +10,10 @@ def blink(pin):
     GPIO.output(pin, 0)
     time.sleep(0.5)
 
-while True:
-    blink(18)
+try:
+    while True:
+        blink(18)
+except KeyboardInterrupt:
 
-GPIO.cleanup()
-print("program executed")
+    GPIO.cleanup()
+    print("program executed")
